@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.entete {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  top: 0px;
+  width: calc(min(100%, 1200px));
+  position: fixed;
+}
+
+.enteteEspacement {
+  height: 60px;
+}
+
+.basPageEspacement {
+  height: 10px;
+}
+
+.contenantBoites {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.large {
+  flex: 2 !important;
+}
+
+.boite {
+  font-size: 1em;
+  text-align: justify;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.boite img {
+  width: 60%;
+  margin-top: -15px;
+  float: right;
+  margin-left: 10px;
+}
+
+.o1 {
+  order: 1;
+}
+
+.o2 {
+  order: 2;
+  border: 1px solid grey;
+}
+
+.o3 {
+  order: 3;
+}
+
+.fondCommun {
+  border: 1px solid rgb(150, 146, 146);
+  background-color: rgb(178, 197, 221);
+}
+
+.basPage {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  width: calc(min(100%, 1600px));
+}
+
+.titrePrincipal {
+  font-family: Impact;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: rgb(150, 146, 146);
+}
+
+.policePrimaire {
+  font-family: serif;
+}
+
+@media screen and (min-width: 800px) {
+  .contenantBoites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .boite {
+    flex: 1;
+  }
+  .boite img {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .basPageEspacement {
+    height: 30px;
+  }
+}
